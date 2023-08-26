@@ -11,4 +11,4 @@ FROM ORDERS as ord
 	on ord.order_id=ordt.order_item_order_id)
 select * from order_details_cte;
 
---- temporary view that doesn't persist in the db. If session restarted then it will be gone.
+--- temporary view that doesn't persist in the db. If session restarted then it will be gone.	
